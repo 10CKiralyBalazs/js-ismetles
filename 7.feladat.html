@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7.feladat</title>
+</head>
+<body>
+    <script>
+function printDivisors() {
+    let number = 10;
+
+    while (number <= 30) {
+        let divisors = [];
+        let i = 1;
+
+        while (i <= number) {
+            if (number % i === 0) {
+                divisors.push(i);
+            }
+            i++;
+        }
+
+        document.write(number + ": " + divisors.join(", ") + ",<br>");
+        number++;
+    }
+}
+
+
+printDivisors();
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.feladat</title>
+</head>
+<body>
+    <script>
+       function getLetterGrade(score) {
+        let grade;
+
+    if (score >= 90) {
+        grade = 'A';
+    } else if (score >= 80) {
+        grade = 'B';
+    } else if (score >= 70) {
+        grade = 'C';
+    } else if (score >= 60) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+
+    return grade;
+}
+
+
+let score = 85; 
+document.write(`The letter grade for a score of ${score} is ${getLetterGrade(score)}`); 
+    </script>
+</body>
+</html>

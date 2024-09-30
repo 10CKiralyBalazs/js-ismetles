@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8.feladat</title>
+</head>
+<body>
+    <script>
+        let currentHours = 14;
+        let currentMinutes = 34;
+        let currentSeconds = 42;
+
+
+const totalSecondsInDay = 24 * 60 * 60;
+
+
+let elapsedSeconds = (currentHours * 60 * 60) + (currentMinutes * 60) + currentSeconds;
+
+
+let remainingSeconds = totalSecondsInDay - elapsedSeconds;
+
+document.write(remainingSeconds);
+    </script>
+</body>
+</html>

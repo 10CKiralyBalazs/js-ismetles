@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.feladat</title>
+</head>
+<body>
+    <script>
+        function calculateBMI(mass_in_kg, height_in_m) {
+    let bmi = mass_in_kg / (height_in_m * height_in_m);
+    return bmi.toFixed(2); 
+}
+
+
+let mass_in_kg = 81.2;
+let height_in_m = 1.78;
+
+
+let bmi = calculateBMI(mass_in_kg, height_in_m);
+
+
+document.write("The Body Mass Index (BMI) is: " + bmi);
+    </script>
+</body>
+</html>

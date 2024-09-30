@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3.feladat</title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year) {
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+
+let years = [2000, 2004, 1904, 2024, 1600, 1900, 1929, 1933, 2023, 1867];
+
+years.forEach(year => {
+    if (isLeapYear(year)) {
+        document.write(year + " is a leap year.<br>");
+    } else {
+        document.write(year + " is not a leap year.<br>");
+    }
+});
+
+    </script>
+</body>
+</html>

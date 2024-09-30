@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.feladat</title>
+</head>
+<body>
+    <script>
+        function averageOfDigits(number) {
+   
+    let numStr = number.toString();
+    let sum = 0;
+
+    
+    for (let i = 0; i < numStr.length; i++) {
+       
+        sum += parseInt(numStr[i]);
+    }
+
+    
+    let average = sum / numStr.length;
+
+    return average;
+}
+
+
+let number = 268;
+let average = averageOfDigits(number);
+document.write("The average of digits is " + average);
+    </script>
+</body>
+</html>
